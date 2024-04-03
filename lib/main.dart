@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_business_card/business_card.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Placeholder(),
+      home: Scaffold(
+        body: BusinessCard(),
+      ),
     );
   }
 }
